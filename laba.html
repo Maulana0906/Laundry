@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laba</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../font/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="flex flex-col h-screen relative">
+
+        <!-- nav -->
+        <div class=" flex justify-center sm:justify-between items-center bg-blue-600 py-2">
+            <h1 class="text-3xl font-extralight text-white mx-3">Laundry</h1>
+            <ul class="hidden sm:flex gap-8 mr-9 text-white cursor-pointer ">
+                <a href="index.html">
+                    <li> Home</li>
+                </a>
+                <a href="transaksi.html">
+                    <li>Transaksi</li>
+                </a>
+                <a href="kelola-data.html">
+                    <li>Kelola data</li>
+                </a>
+                <a href="#">
+                    <li>Laba</li>
+                </a>
+                <a href="harga.html">
+                    <li>Harga</li>
+                </a>
+            </ul>
+        </div>
+
+        <!-- content-1 -->
+        <div class="container mx-auto flex flex-col items-center mt-8 gap-y-4">
+            <h1 class="text-center text-4xl text-blue-500 font-bold xl:text-5xl">Laba</h1>
+            <input type="text" class="border border-blue-500 rounded-lg shadow-md w-1/2 p-y1 px-2 outline-none xl:py-1"
+                placeholder="Search">
+        </div>
+
+        <!-- content-2 -->
+        <div class="container mx-auto flex flex-col h-96 overflow-auto mt-20 sm:mt-10">
+            <table class="table-auto">
+                <thead class="bg-blue-50">
+                    <tr>
+                        <th class="border-r-2 border-b border-blue-400 rounded-tl-lg px-4  py-1  ">No.</th>
+                        <th class="border-r-2 border-b border-blue-400 py-1 px-14 ">Tanggal</th>
+                        <th class="border-r-2 border-b border-blue-400  py-1  px-14 ">Total</th>
+                        <th class=" border-b border-blue-400 px-14 ">Laba</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-center border-b border-blue-200 ">
+                        <td class="p-1">1.</td>
+                        <td>2 Juni 2023</td>
+                        <td>21</td>
+                        <td>Rp 100.000,00</td>
+                    </tr>
+                    <tr class="text-center border-b border-blue-200 ">
+                        <td class="p-1">2.</td>
+                        <td>3 Juni 2023</td>
+                        <td>10</td>
+                        <td>Rp 40.00,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <!-- nav versi hp -->
+        <div
+            class=" container fixed bottom-0 sm:hidden flex justify-around mt-32 h-14 bg-slate-50 items-center text-xl text-blue-400">
+            <a href="transaksi.html">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+            </a>
+            <a href="kelola-data.html">
+                   <i class="fa fa-table" aria-hidden="true"></i>
+            </a>
+            <a href="index.html">
+                <i class="fa fa-home"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
+            </a>
+            <a href="harga.html">
+                <i class="fa fa-money" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

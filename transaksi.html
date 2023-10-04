@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../font/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="flex flex-col relative">
+
+        <!-- nav -->
+        <div class=" flex justify-center sm:justify-between items-center bg-blue-600 py-2">
+            <h1 class="text-3xl font-extralight text-white mx-3">Laundry</h1>
+            <ul class="hidden sm:flex gap-8 mr-9 text-white cursor-pointer ">
+                <a href="index.html">
+                    <li> Home</li>
+                </a>
+                <a href="#">
+                    <li>Transaksi</li>
+                </a>
+                <a href="kelola-data.html">
+                    <li>Kelola data</li>
+                </a>
+                <a href="laba.html">
+                    <li>Laba</li>
+                </a>
+                <a href="harga.html">
+                    <li>Harga</li>
+                </a>
+            </ul>
+        </div>
+
+        <!-- content-1 -->
+        <div class="container mx-auto flex flex-col items-center gap-6 ">
+            <h1 class="text-4xl xl:text-5xl m-4 text-blue-500 font-semibold tracking-wide">Transaksi</h1>
+            <label class="flex w-full justify-center gap-2" for="nama"> Nama :
+                <input class="w-9/12 border border-blue-500 px-1 rounded-md outline-none text-sm shadow-md xl:py-1" type="text" id="nama" placeholder="Masukan nama" autocomplete="off">
+            </label>
+            <label class="flex w-full justify-center gap-1" for="alamat"> Alamat :
+                <input class="w-9/12 border border-blue-500 outline-none text-sm px-1 rounded-md shadow-md xl:py-1" type="text" id="alamat" placeholder="Masukan alamat" autocomplete="off">
+            </label>
+            <label class="flex w-full justify-center gap-8" for="tlp"> Tlp :
+                <input class="w-9/12 border border-blue-500 outline-none text-sm px-1 rounded-md shadow-md xl:py-1" type="number" id="tlp" placeholder="Masukan telephon">
+            </label>
+            <label class="flex w-full justify-center gap-4" for="berat"> Berat :
+                <input class="w-9/12 border border-blue-500 outline-none text-sm px-1 rounded-md shadow-md xl:py-1" type="number" id="berat" placeholder="Masukan berat">
+            </label>
+
+            <!-- checbox harga -->
+            <div class="h-28 w-9/12 bg-blue-200 flex px-3 rounded-lg shadow-lg">
+                <div class="basis-1/2 flex flex-col justify-evenly xl:justify-between">
+                    <label class="flex flex-row gap-2" for="basah"> 
+                        <input type="checkbox" id="basah">
+                        Cuci basah
+                    </label>
+                    <label class="flex flex-row gap-2" for="kering">
+                        <input type="checkbox" id="kering">
+                         Cuci kering 
+                    </label>
+                    <label class="flex flex-row gap-2" for="setrika">
+                        <input type="checkbox" id="setrika"> 
+                        Setrika 
+                    </label>
+                </div>
+                <div class="basis-1/2 flex flex-col justify-evenly items-end text-sm">
+                    <h1 >Rp 8.000,00 / kg</h1>
+                    <h1>Rp 8.000,00 / kg</h1>
+                    <h1>Rp 8.000,00 / kg</h1>
+                </div>
+            </div>
+
+            <label class="w-full justify-center flex gap-2" for="harga"> Harga :
+                <input class="w-9/12 outline-none text-sm border border-blue-500 px-1 rounded-md shadow-md xl:py-1" type="text" id="harga" placeholder="Masukan harga">
+            </label>
+            <label class="w-full justify-center  flex gap-2" for="order"> Order :
+                <input class="w-9/12 border outline-none text-sm border-blue-500 px-1 rounded-md shadow-md xl:py-1" type="text" id="order" placeholder="Masukan tgl order">
+            </label>
+            <label class="w-full justify-center flex flex-wrap gap-2" for="tgl-p"> 
+                <h1 class="basis-full ml-8">
+                    Tanggal pengambilan :  
+                </h1>
+                <div class="w-2/5 h-36 xl:-ml-36 bg-blue-300 text-center text-white rounded-md shadow-md"> 
+                    Kalender
+                </div>
+                <input class="h-1/2 py-1 outline-none border border-blue-500 rounded-md text-sm px-2 xl:py-1" type="text" id="tgl-p" placeholder="Masukan tgl pengambilan">
+            </label>
+        </div>
+        <div class="flex justify-center pt-12 pb-5">
+            <button class="w-1/8 bg-blue-500 py-1 px-3 rounded-lg shadow-lg text-white font-semibold tracking-wide  xl:py-1 xl:px-3 xl:text-lg">
+                Buat Orderan
+            </button>
+        </div>
+
+        <!-- content-3 -->
+        <div class="container mx-auto h-20"></div>
+
+        <!-- nav versi hp -->
+        <div class="container fixed bottom-0 bg-slate-50  sm:hidden flex justify-around h-14 mt-14  items-center text-xl text-blue-400">
+            <a href="#">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+            </a>
+            <a href="kelola-data.html">
+                 <i class="fa fa-table" aria-hidden="true"></i>
+            </a>
+            <a href="index.html">
+                <i class="fa fa-home" ></i>
+            </a>
+            <a href="laba.html">
+                <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
+            </a>
+            <a href="harga.html">
+                 <i class="fa fa-money" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
